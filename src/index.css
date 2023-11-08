@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.font-bold {
+    font-weight: 700;
+}
+
+.nav-container {
+    border: 1px solid black;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+}
+.nav-branding {
+    margin-right: auto;
+}
+.nav-item-container {
+    display: flex;
+    gap: 1rem;
+}
+.nav-item-container > a {
+    text-decoration: none;
+    color: #000;
+}
+
