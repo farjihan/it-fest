@@ -5,17 +5,19 @@
 }
 
 :root {
-    --lightSky : #e0f2fe;
-    --sky : #0ea5e9;
+    --lightSky: #e0f2fe;
+    --sky: #0ea5e9;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 a {
     text-decoration: none;
     color: #94a3b8;
 }
+
 .text-blue {
     color: var(--sky);
 }
@@ -26,17 +28,21 @@ a {
     display: flex;
     background: var(--lightSky);
 }
+
 .nav-branding {
     margin-right: auto;
 }
+
 .nav-item-container {
     display: none;
     gap: 1rem;
 }
+
 .nav-branding-icon {
     margin-right: .25rem;
     color: var(--sky);
 }
+
 .mobile-nav-container {
     background: white;
     min-width: 150px;
@@ -67,11 +73,13 @@ a {
     padding: 3rem 0;
     background: var(--lightSky);
 }
+
 .anima-container {
     margin-right: auto;
     margin-left: auto;
     max-width: 250px;
 }
+
 .hero-text-container {
     font-size: 1.15rem;
     font-weight: 700;
@@ -86,7 +94,6 @@ a {
 
 .about-container {
     text-align: center;
-    font-size: 1rem;
     margin-top: 3rem;
     margin-bottom: 32rem;
 }
@@ -106,14 +113,87 @@ a {
     line-height: 1.5;
 }
 
+
+/*
+     #### SCREEN SMALL  ####
+ */
 @media (min-width: 640px) {
     .mobile-open {
         display: none;
     }
+
     .nav-item-container {
         display: flex;
     }
+
+    .nav-container {
+        font-size: 1.25rem;
+    }
+
+
+    .anima-container {
+        max-width: 300px;
+    }
+
+    .hero-text-container {
+        font-size: 1.5rem;
+    }
+
+    .hero-text-container {
+        font-size: 1.75rem;
+    }
+
+    .about-container {
+        font-size: 1.35rem;
+    }
+
+    .about-desc {
+        font-size: 1rem;
+    }
+
+    .about-main {
+        max-width: 24rem;
+    }
+
+
+    /*
+      #### SCREEN MEDIUM  ####
+     */
+    @media (min-width: 768px) {
+        .hero-main-container {
+            width: fit-content;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+
+        
+
+        .about-main {
+            max-width: 28rem;
+        }
+
+
+
+        /*
+          #### SCREEN LARGE  ####
+        */
+        @media (min-width: 1024px) {
+            .hero-main-container {
+                gap: 3rem;
+            }
+
+            .anima-container {
+                max-width: 350px;
+            }
+
+            .hero-text-container {
+                font-size: 2rem;
+            }
+
+        }
+    }
 }
-
-
-
